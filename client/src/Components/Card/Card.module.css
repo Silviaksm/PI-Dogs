@@ -1,0 +1,30 @@
+.card {
+    width: 430px;
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(239, 242, 244);
+    background-color: rgba(240, 248, 255, 0.445);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translate(-15px);
+    box-shadow: 0 15px 19px rgba(245, 233, 61, 0.97);
+}
+
+.text{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    
+    
+}
+
+.info{
+    text-decoration: none;
+}

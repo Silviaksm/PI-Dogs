@@ -1,0 +1,34 @@
+.buttonOne {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7fbfc;
+    border-color:transparent;
+    background-color:transparent;
+    border-width: 3px;
+    border-radius: 10%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Btn:hover{
+    transform: translate(8px);
+    box-shadow: 0 5px 9px rgba(116, 203, 240, 0.579);
+}
+
+.Button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7fbfc;
+    border-color:transparent;
+    border-radius: 10px;
+    background-color:rgba(119, 175, 212, 0.529);
+   
+    cursor: pointer;
+    text-align: center;
+}
+
