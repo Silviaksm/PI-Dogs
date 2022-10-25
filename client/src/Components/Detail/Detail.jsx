@@ -21,23 +21,23 @@ export default function Detail() {
     let details = useSelector((state) => state.detail);
     console.log(details)
 
-
+    
     return (
-        <div>
-            <div>
+        <div className={style.uno}>
+            <div >
                 <Link to='/home'>
                     <button>Back</button>
                 </Link>
 
                 {
                     details.length > 0 ?
-                        <div>
-                            <h1>{details[0].name}</h1>
-                            <img src={details[0].image} alt="not found" width="300px" height="400px" />
-                            <h3>Peso: {details.length ? details[0].weight_min : "Cargando"} - {details.length ? details[0].weight_max : "Cargando"} kg.</h3>
-                            <h3>Altura: {details.length ? details[0].height_min : "Cargando"} - {details.length ? details[0].height_max : "Cargando"} Cm.</h3>
-                            <h3>Life: {details[0].life_span}</h3>
-                            <h3>Temperaments: {details[0].temperaments}</h3>
+                        <div className={style.div}>
+                            <h1 className={style.name}>{details[0].name}</h1>
+                            <img className={style.img} src={details[0].image} alt="not found" width="600px" height="400px" />
+                            <h3 className={style.h3}>Weigth: {details.length ? details[0].weight_min : "Loading"} - {details.length ? details[0].weight_max : "Loading"} kg.</h3>
+                            <h3 className={style.h3}>Heigth: {details.length ? details[0].height_min : "Loading"} - {details.length ? details[0].height_max : "Loading"} Cm.</h3>
+                            <h3 className={style.h3} >Life Span: {details.length ? details[0].life_span_min : "Loading"} - {details.length ? details[0].life_span_max :"loading"} </h3>
+                            <h3>Temperaments:  {details[0].temperaments? details[0].temperaments.join(" - "): "Loading"}</h3>
                         </div>
                         :
                         <div className={style.divLoading } >

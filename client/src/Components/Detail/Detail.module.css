@@ -19,3 +19,22 @@
       transform: rotate(360deg);
     }
   } 
+
+
+
+.uno{
+  background-image: url('https://i.pinimg.com/originals/b8/3c/0c/b83c0cb9c92063c293b95e23281aef1b.jpg');
+  padding-top: 0%;
+  background-size: cover;
+  padding: 40px;
+}
+
+.div{
+  display:inline;
+  color: aliceblue;
+}
+
+
+
+  
+ 

@@ -1,79 +1,95 @@
 .divOne {
 
-    background-image: url('https://media.istockphoto.com/photos/old-blue-wooden-fence-with-peeling-paint-picture-id1242980905?b=1&k=20&m=1242980905&s=170667a&w=0&h=4CftAYOgc_gi7anjmore-MjVYbGZA6YAFMuL5Azg8wY=');
-    padding-top: 0%;
-    background-size: 100% 100%;
-    
+  background-image: url('https://i.pinimg.com/originals/b8/3c/0c/b83c0cb9c92063c293b95e23281aef1b.jpg');
+  padding-top: 0%;
+  background-size: 100% 100%;
+
 
 
 }
 
 .divCards {
-    display: inline-block;
+  display: inline-block;
 
 }
 
 
 .selects {
-    width: 98%;
-    height: 35%;
-    padding: 8px;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-   background-color: transparent;
-   
+  width: 98%;
+  height: 35%;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+
 
 }
+
 .select {
   width: 100px;
-  background-color:rgba(119, 175, 212, 0.529);
+  background-color: rgba(119, 175, 212, 0.529);
   border-color: transparent;
   border-width: 4px;
   color: aliceblue;
   font-weight: bold;
-  font-size:13px;
-  justify-content: end;
-  align-items: center;
+  font-size: 13px;
+
+
 }
 
 
 
 .divLoading {
-    
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid #3498db;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    animation: spin 1s linear infinite;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 
 }
+
 @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  } 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
-  .act{
-   
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aliceblue;
-   
-    background-color:rgba(119, 175, 212, 0.529);
-    font-size:15px;
-    font-weight: bold;
-    display: flex;
-   margin-top: auto;
-    padding: 5px;
-    justify-content: flex-end;
-    align-content: center;
-    height: 20px;
- }
+.act {
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+
+  background-color: rgba(119, 175, 212, 0.529);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  margin-top: auto;
+  padding: 5px;
+  justify-content: flex-end;
+  align-content: center;
+  height: 20px;
+}
+
+.uno {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: dotted;
+  font-size: 30px;
+  height: 100%;
+  padding: 80px;
+}
+
+.dog{
+  color: aliceblue;
+}

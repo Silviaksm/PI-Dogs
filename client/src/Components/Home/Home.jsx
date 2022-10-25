@@ -68,25 +68,26 @@ export default function Home() {
     return (
         <div className={style.divOne}>
             <Link to="/dogs" className={style.act}>Create New Dog</Link>
-            
-            <button className={style.select} onClick={e => { handleClick(e) }}>Reset</button>
+            <h1 className={style.dog}>DOGS</h1>
+            <button className={style.select} onClick={(e) => { handleClick(e) }}>Reset</button>
             <div className={style.selects}>
-                <select className={style.select} onChange={e => handleSort(e)}>
-                    <option  disabled selected defaultValue> Name</option>
+                <select className={style.select} onChange={(e) => handleSort(e)}>
+                    <option  value hidden> Name</option>
                     <option value="acs">A-Z</option>
                     <option value="desc">Z-A</option>
                 </select>
-                <select className={style.select} onChange={e => handleByWeight(e)}>
+                <select className={style.select} onChange={(e) => handleByWeight(e)}>
                 <option value='all'>Weight</option>
-                <option value="max_weight">Max</option>
-                <option value="min_weight">Min</option>
+                <option value="weight_max">Max</option>
+                <option value="weight_min">Min</option>
                 </select>
-                <select className={style.select}onChange={e => handleFilterBreed(e)}>
-                    <option disabled selected defaultValue>Breed</option>
+                <select className={style.select}onChange={(e) => handleFilterBreed(e)}>
+                    <option value hidden>Breed</option>   
                     <option value="all">All</option>
+                    <option value="exist">De API</option>
                     <option value="created">Created</option>
                 </select>
-                <select className={style.select} onChange={e => handleFilterTemps(e)}>
+                <select className={style.select} onChange={(e) => handleFilterTemps(e)}>
                 <option value hidden >Tempers</option>
                   
                   {
@@ -118,7 +119,7 @@ export default function Home() {
                             weight_max={el.weight_max}
                             image={el.image}
                             id={el.id}
-                            createInDb={el.createInDb}/>
+                            createdInDb={el.createdInDb}/>
                         </div>
                        
                     )

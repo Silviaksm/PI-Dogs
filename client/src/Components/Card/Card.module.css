@@ -1,7 +1,7 @@
 .card {
     width: 430px;
     height: 480px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 5px 5px rgb(239, 242, 244);
     background-color: rgba(240, 248, 255, 0.445);
     overflow: hidden;
@@ -10,21 +10,70 @@
     transition: all 0.25s;
 }
 
-.card:hover{
+.card:hover {
     transform: translate(-15px);
     box-shadow: 0 15px 19px rgba(245, 233, 61, 0.97);
 }
 
-.text{
+.text {
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.info {
+  border-radius: 5px;
+  background-color: rgba(221, 221, 101, 0.421);
+  border-color: transparent;
+  color: aliceblue;
+  margin-bottom: 10px;
+  
+  
+}
+
+.temp {
+    color: aliceblue;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    font-size: smaller;
+}
+
+.w {
+    color: aliceblue;
+    display: inline-flex;
+    padding: 4px;
+    font-size: small;
+    margin-top: 1px;
+   justify-content: center;
     
 }
 
-.info{
+.img {
+    border-radius: 20px;
+    height: 250px;
+
+    width: 350px;
+
+    object-fit: cover;
+}
+
+.h{
+    color: aliceblue;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    font-size: small;
+    margin-bottom: 0;
+
+}
+
+.l{
     text-decoration: none;
+    
 }

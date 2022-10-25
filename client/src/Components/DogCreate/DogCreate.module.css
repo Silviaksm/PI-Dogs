@@ -1,26 +1,59 @@
-/* .divOne{
-    display:flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    
-   
-} */
-
-.ima{
-    display: flex;
-   margin-right: 1000px;
-  padding-top: 1px;
+.ima {
+    display:inline-flex;
+    margin-right: 1000px;
+    padding-top: 1px;
+    text-align: center;
 }
 
-.create{
+.create {
     background-color: transparent;
-    border: 4px solid #11637ace;
-    border-radius: 5%;
-    width: 450px;
+    border: 4px solid #cfe527ce;
+    border-radius: 10%;
+    width: 750px;
     height: 400px;
     padding: 20px;
-    margin-left: 500px;
-    box-shadow: 10px 10px 10px 10px #50bad2;
-    
+    margin-left: 600px;
+
+
+}
+
+.divButtonOne {
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: unset;
+    background-color: yellow;
+    text-decoration: transparent;
+    color: black;
+
+}
+
+.divButtontwo {
+    border-radius: 60px;
+    display: inline-flex;
+    align-items: flex-start;
+
+    background-color: yellow;
+    text-decoration: transparent;
+    color: black;
+
+}
+
+.name {
+    display: inline-flex;
+    justify-content: left;
+    margin-right: 380px;
+
+}
+
+.image {
+    display: inline-flex;
+    justify-content: right;
+    margin-right: 70px;
+
+}
+
+.tem{
+   
+   
+    flex-direction:row-reverse;
 }

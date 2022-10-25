@@ -56,6 +56,7 @@ export function getTemperaments(){
 }
 
 export function orderByName(payload){
+    console.log(payload)
     return {
         type: 'ORDER_BY_NAME',
         payload
