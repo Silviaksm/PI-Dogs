@@ -1,21 +1,3 @@
-// const { Router } = require('express');
-// const {getDogs, getDogsId, postDog}= require('../Controllers/dogs');
-// const {getTemperaments}=require('../Controllers/Temperaments');
-
-
-// const router = Router();
-
-
-// router.get("/dogs", getDogs);
-// router.get("./dogs/:id", getDogsId);
-// router.get("./temperaments", getTemperaments);
-// router.post("./dogs", postDog);
-
-
-// module.exports=router;
-
-
-
 const { Router } = require('express');
 const axios = require('axios');
 const {Dog, Temperament}= require('../db');
@@ -31,7 +13,7 @@ const getApiInfo = async () => {
     const apiInfo = await apiUrl.data.map(el => {
         let temperamentArray = [];
         if (el.temperament) {//pregunto que exista el temperamento y lo devuelvo en un arreglo
-            temperamentArray = el.temperament.split(" - ");
+            temperamentArray = el.temperament.split(", ");
         }
 
         return {
@@ -47,11 +29,12 @@ const getApiInfo = async () => {
             image: el.image.url,
         }
     })
+    
     return apiInfo;
 }
 
 const getDbInfo = async ()=>{
-    return await Dog.findAll({
+    const dbDog = await Dog.findAll({
         include:{
             model: Temperament,
             attributes: ['name'],
@@ -60,6 +43,22 @@ const getDbInfo = async ()=>{
             },
         }
     })
+    const dogDb = await dbDog.map((e) => {
+        return {
+            id: e.id,
+            name: e.name,
+            height_min: e.height_min,
+            height_max: e.height_max,
+            weight_min: e.weight_min,
+            weight_max: e.weight_max,
+            temperaments: e.temperaments.map((e) => e.name),
+            life_span_min: e.life_span_min,
+            life_span_max: e.life_span_max,
+            image: e.image,
+            createdInDb: true
+        }
+    })
+    return dogDb
 };
 
 const getAllDogs = async ()=>{
@@ -126,20 +125,12 @@ try {
 
 
 router.post('/dogs', async (req,res)=>{
-    let{ name, min_height, max_height, min_weight, max_weight, life_span, image,createdInDb, temperament }= req.body
+    let{ name, height_min, height_max, weight_min, weight_max, life_span_min,life_span_max, image,createdInDb, temperament }= req.body
 
-    const arrayH= [];
-    const min = min_height;
-    const max = max_height;
-    arrayH.push(min,max)
-
-    const arrayW = []
-    const minW = min_weight;
-    const maxW = max_weight;
-    arrayW.push(minW, maxW)
+    
 
     let dogCreate= await Dog.create({
-        name, height: arrayH, weight: arrayW, life_span, image, createdInDb
+        name, height_min, height_max, weight_min, weight_max, life_span_min,life_span_max, image ,createdInDb, temperament 
     })
     let temperamentDb= await Temperament.findAll({
         where:{ name: temperament}

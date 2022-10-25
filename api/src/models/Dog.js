@@ -15,24 +15,44 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    
 
-    height: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+    height_min: {
+      type: DataTypes.STRING,
       allowNull: false
     },
 
-    weight: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+    height_max: {
+      type: DataTypes.STRING,
       allowNull: false
     },
 
-    life_span: {
+    weight_min:{
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    
+    weight_max:{
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+  
+
+    life_span_min: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
+    life_span_max: {
       type: DataTypes.STRING,
       allowNull: false,
     },
 
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
+      defaultValue: 'https://th.bing.com/th/id/OIP.DBB5qYtSyaqgwTFXpqBWrwHaE8?pid=ImgDet&rs=1',
       allowNull: false,
     },
 
