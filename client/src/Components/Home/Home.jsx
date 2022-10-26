@@ -119,7 +119,8 @@ export default function Home() {
                             weight_max={el.weight_max}
                             image={el.image}
                             id={el.id}
-                            createdInDb={el.createdInDb}/>
+                            createdInDb={el.createdInDb}
+                            />
                         </div>
                        
                     )

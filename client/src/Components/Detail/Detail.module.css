@@ -34,7 +34,15 @@
   color: aliceblue;
 }
 
+.img{
+  border-radius: 50px;
+}
 
-
+.b{
+  border-radius: 5px;
+  background-color: rgba(247, 237, 96, 0.775);
+  color: aliceblue;
+  font-size: medium;
+}
   
  

@@ -26,7 +26,7 @@ export default function Detail() {
         <div className={style.uno}>
             <div >
                 <Link to='/home'>
-                    <button>Back</button>
+                    <button className={style.b}>Back</button>
                 </Link>
 
                 {

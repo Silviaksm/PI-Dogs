@@ -1,7 +1,8 @@
 .ima {
-    display:inline-flex;
+    display:flex;
     margin-right: 1000px;
-    padding-top: 1px;
+    margin-bottom: 200px;
+    padding-top: 0px;
     text-align: center;
 }
 
@@ -10,9 +11,9 @@
     border: 4px solid #cfe527ce;
     border-radius: 10%;
     width: 750px;
-    height: 400px;
+    height: 450px;
     padding: 20px;
-    margin-left: 600px;
+    margin-left: 650px;
 
 
 }
@@ -53,7 +54,10 @@
 }
 
 .tem{
-   
-   
-    flex-direction:row-reverse;
+   display: inline-flex;
+   justify-content: flex-end;
+   align-items: flex-end;
 }
+
+
+
