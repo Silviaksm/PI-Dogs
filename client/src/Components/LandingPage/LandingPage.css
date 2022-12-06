@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Buffalo;
+  src: url("../../Assets/fonts/Buffalo.otf");
+}
+
+@font-face {
+  font-family: Mistrully;
+  src: url("../../Assets/fonts/Mistrully.ttf");
+}
+
+.containerLanding {
+  background-image: url(https://res.cloudinary.com/dowhfu3fj/image/upload/v1669924283/Dogs/LandingImageDogs_xxvwjr.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+}
+
+.containerLanding p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8em;
+  text-shadow: rgb(250, 250, 247) 7px 7px 7px;
+  color: rgb(210, 63, 102);
+  position: absolute;
+  left: 2.5em;
+  top: 1.8em;
+}
+
+.containerLanding button{
+  position: absolute;
+  left: 22em;
+  top: 17em;
+  
+  width:  fit-content;
+  background-color: rgb(237, 237, 24);
+  border-radius: 0.9375em;
+  box-shadow: 0.625em 0.625em 0.9375em 0.3125em rgba(237, 227, 39, 0.951);
+  border-color: transparent;
+  padding: 0.5em 3.1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(210, 63, 102);
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.containerLanding button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color: white;
+}
+
+@media screen and (max-width:1200px) {
+  .containerLanding p {
+    font-size: 3em;
+    position: relative;
+    left: 6em;
+    top: 6em;
+  }
+
+  .containerLanding button{
+    font-size: 1em;
+    position: relative;
+    left: 20em;
+    top: 18em;
+  }
+
+  
+}

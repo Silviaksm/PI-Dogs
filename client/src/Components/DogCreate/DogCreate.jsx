@@ -116,87 +116,84 @@ export default function DogCreate() {
     }, [dispatch])
 
     return (
-        <div className={style.divOne}>
+        <><div className={style.divOne}>
             <form className={style.create} onSubmit={(e) => handleSubmit(e)}>
-                <div>
+
+                <div className={style.botones}>
                     <Link to='/home'><button className={style.divButtonOne}>Back</button></Link>
                     <button className={style.divButtontwo} type='submit'>Create Dog</button>
                 </div>
-                <h1 className='{styles.title}'>Create Dogs</h1>
-                <div>
-                    <label className={style.in}>Name: </label>
-                    <input type='text' value={input.name} name='name' placeholder="ej. pug" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.name && (<p className='pendiente'>{errors.name}</p>)}
+                <h1 className={style.title}>Create Dogs</h1>
+                <div className={style.unoName}>
+                    <label className={style.lab} >Name: </label>
+                    <input type='text' value={input.name} name='name' placeholder="ej. pug" className={style.inp} onChange={(e) => handleChange(e)} />
+                    {errors.name && (<p className={style.error}>{errors.name}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Image: </label>
-                    <input type="text" value={input.image} name="image" placeholder="Img URL" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.image && (<p className='pendiente'>{errors.image}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>Image: </label>
+                    <input type="text" value={input.image} name="image" placeholder="Img URL" className={style.inp} onChange={(e) => handleChange(e)} />
+                    {errors.image && (<p className={style.error}>{errors.image}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}> Min Height: </label>
-                    <input type="text" value={input.min_height} name="height_min" placeholder="ej. 20" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.height_min && (<p className='pendiente'>{errors.height_min}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}> MinHeight: </label>
+                    <input type="text" value={input.min_height} name="height_min" placeholder="ej. 20" className={style.inpm} onChange={(e) => handleChange(e)} />
+                    {errors.height_min && (<p className={style.error}>{errors.height_min}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Max Height: </label>
-                    <input type="text" value={input.max_height} name="height_max" placeholder="ej. 10" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.height_max && (<p className='pendiente'>{errors.height_max}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>MaxHeight: </label>
+                    <input type="text" value={input.max_height} name="height_max" placeholder="ej. 10" className={style.inpm} onChange={(e) => handleChange(e)} />
+                    {errors.height_max && (<p className={style.error}>{errors.height_max}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Min Weight: </label>
-                    <input type="text" value={input.min_weight} name="weight_min" placeholder="ej. 20" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.weight_min && (<p className='pendiente'>{errors.weight_min}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>MinWeight: </label>
+                    <input type="text" value={input.min_weight} name="weight_min" placeholder="ej. 20" className={style.inpm} onChange={(e) => handleChange(e)} />
+                    {errors.weight_min && (<p className={style.error}>{errors.weight_min}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Max Weight: </label>
-                    <input type="text" value={input.max_weight} name="weight_max" placeholder="ej. 50" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.weight_max && (<p className='pendiente'>{errors.weight_max}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>MaxWeight: </label>
+                    <input type="text" value={input.max_weight} name="weight_max" placeholder="ej. 50" className={style.inpm} onChange={(e) => handleChange(e)} />
+                    {errors.weight_max && (<p className={style.error}>{errors.weight_max}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Life Span min: </label>
-                    <input type="text" value={input.life_span_min} name="life_span_min" placeholder="ej. 10" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.life_span_min && (<p className='pendiente'>{errors.life_span_min}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>LifeSpan min: </label>
+                    <input type="text" value={input.life_span_min} name="life_span_min" placeholder="ej. 10" className={style.inpl} onChange={(e) => handleChange(e)} />
+                    {errors.life_span_min && (<p className={style.error}>{errors.life_span_min}</p>)}
                 </div>
-                <div>
-                    <label className={style.in}>Life Span max: </label>
-                    <input type="text" value={input.life_span_max} name="life_span_max" placeholder="ej. 10" className={style.name} onChange={(e) => handleChange(e)} />
-                    {errors.life_span_max && (<p className='pendiente'>{errors.life_span_max}</p>)}
+                <div className={style.unoName}>
+                    <label className={style.lab}>LifeSpan max: </label>
+                    <input type="text" value={input.life_span_max} name="life_span_max" placeholder="ej. 10"className={style.inpl} onChange={(e) => handleChange(e)} />
+                    {errors.life_span_max && (<p className={style.error}>{errors.life_span_max}</p>)}
                 </div>
 
 
 
 
 
-                <div>
-                    <option disabled selected>Temperaments</option>
-                    <select className={style.tem} onChange={(e) => handleSelect(e)}>
+                <div className={style.temp}>
+                    <option className={style.t}  disabled selected>Temperaments</option>
+                    <select  onChange={(e) => handleSelect(e)}>
 
 
                         {tempers.map((e) => (
-                            <option value={e} key={e}>{e}</option>
+                            <option  value={e} key={e}>{e}</option>
 
 
                         ))}
 
                     </select>
-                    {/* <ul><li>{input.temperament.map(el => el+ ' ,')}</li></ul> */}
+                    
 
                 </div>
 
-                {
-                    input.temperament.map(t =>
-                        <div key={t}>
-                            <p className='pendiente'>{t}</p>
-                            <button className='pendiente'  onClick={() => handleDelete(t)}>x</button>
-                        </div>)
-                }
+                {input.temperament.map(t => <div className={style.temp} key={t}>
+                    <p >{t}</p>
+                    <button className={style.x} onClick={() => handleDelete(t)}>x</button>
+                </div>)}
 
 
             </form>
-            <div className={style.ima}>
-                <img src="https://besthqwallpapers.com/Uploads/18-2-2019/80921/thumb2-french-bulldog-small-black-puppy-pets-cute-animals-dogs.jpg" alt="no" width="700px" height="400px" />
-            </div>
-        </div>
+
+         
+        </div></>
     )
 }

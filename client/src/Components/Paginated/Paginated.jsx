@@ -11,7 +11,7 @@ export default function Paginated({dogsPerPage, setCurrentPage, allDogs, paginat
 
     return (
 
-        <div>
+        <div className={style.containerPaginated}>
             <ul>
                 <button disabled={currentPage === 1} className={style.Button} onClick={() => { 
                      setCurrentPage(currentPage === 1 ?

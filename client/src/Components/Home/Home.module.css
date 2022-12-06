@@ -1,3 +1,4 @@
+
 .divOne {
 
   background-image: url('https://i.pinimg.com/originals/b8/3c/0c/b83c0cb9c92063c293b95e23281aef1b.jpg');
@@ -31,13 +32,29 @@
   background-color: rgba(119, 175, 212, 0.529);
   border-color: transparent;
   border-width: 4px;
-  color: aliceblue;
+  color: rgb(255, 243, 240);
   font-weight: bold;
   font-size: 13px;
-
-
+  border-radius: 1em;
+ text-align: center;
+ 
 }
 
+.selecto {
+  width: 100px;
+  background-color: rgba(119, 175, 212, 0.529);
+  border-color: transparent;
+  border-width: 4px;
+  color: rgb(224, 238, 33);
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 1em;
+ text-align: center;
+ align-items: center;
+ position: relative;
+ left: 54.5em;
+ 
+}
 
 
 .divLoading {
@@ -68,17 +85,17 @@
 .act {
 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: aliceblue;
-
+  color: rgb(224, 238, 33);
   background-color: rgba(119, 175, 212, 0.529);
+  border-radius: 3em;
   font-size: 15px;
   font-weight: bold;
-  display: flex;
-  margin-top: auto;
-  padding: 5px;
-  justify-content: flex-end;
-  align-content: center;
-  height: 20px;
+  padding: 5px 5px 5px;
+  position: relative;
+  left:82em;
+  top: 3em;
+  
+ 
 }
 
 .uno {
@@ -92,4 +109,5 @@
 
 .dog{
   color: aliceblue;
+  text-align: center;
 }

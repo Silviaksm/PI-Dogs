@@ -1,3 +1,11 @@
+.containerPaginated{
+   position: relative;
+   left: 27em;
+}
+
+
+
+
 .buttonOne {
     display: flex;
     justify-content: space-around;

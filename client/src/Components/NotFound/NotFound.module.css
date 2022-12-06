@@ -1,0 +1,9 @@
+.conteiner{
+    width: 730px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgb(238, 186, 107);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}

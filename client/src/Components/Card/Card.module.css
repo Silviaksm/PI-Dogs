@@ -1,6 +1,11 @@
+.container{
+    padding-top: 1em;
+}
+
+
 .card {
-    width: 430px;
-    height: 480px;
+    width: 330px;
+    height: 390px;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgb(239, 242, 244);
     background-color: rgba(240, 248, 255, 0.445);
@@ -31,7 +36,9 @@
   background-color: rgba(221, 221, 101, 0.421);
   border-color: transparent;
   color: aliceblue;
-  margin-bottom: 10px;
+  margin-top: 0.5em;
+  position: relative;
+  top:0.5em;
   
   
 }
@@ -41,7 +48,7 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    font-size: smaller;
+    font-size: 0.7em;
 }
 
 .w {
@@ -58,7 +65,7 @@
     border-radius: 20px;
     height: 250px;
 
-    width: 350px;
+    width: 250px;
 
     object-fit: cover;
 }
